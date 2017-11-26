@@ -1,0 +1,10 @@
+.navbar .navbar-item {
+  margin: 0 15px;
+  height: 100%;
+}
+
+.activeNav {
+  border-bottom: 2px solid black;
+  opacity: 1;
+  font-weight: bold;
+}
