@@ -1,11 +1,12 @@
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  height: 100vh;
 }
 
 main {
   width: 40em;
-  margin: 1em auto;
+  margin: 5em auto;
 }
 
 a {

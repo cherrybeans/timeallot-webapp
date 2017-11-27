@@ -1,6 +1,10 @@
 button {
   background: #f0f0f0;
   border: #bdbdbd 2px solid;
-  border-radius: 5px;
+  border-radius: 12px;
   padding: 6px;
+}
+
+button:hover {
+  background: #bcbcbc;
 }

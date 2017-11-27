@@ -9,7 +9,7 @@ class NavbarItem extends Component {
     return (
       <div className="navbar-item">
         <NavLink
-          activeClassName="activeNav"
+          activeClassName="activeNav active-navbar-item"
           exact={this.props.exact}
           to={this.props.link}
         >

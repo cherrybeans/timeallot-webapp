@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import BackButton from "../../../components/BackButton/BackButton";
 
 class Goals extends Component {
   constructor(props) {
@@ -16,7 +17,13 @@ class Goals extends Component {
   render() {
     return (
       <div>
-        <h2>Goals</h2>
+        <h1>
+          <BackButton /> Goals
+        </h1>
+        <p>
+          Set some goals like how many blocks you'd like to do every day, every
+          week, in general or project spesific.{" "}
+        </p>
         <button onClick={this.submitGoal}>Submit a Goal</button>
       </div>
     );

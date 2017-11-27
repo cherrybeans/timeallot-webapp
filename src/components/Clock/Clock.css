@@ -1,0 +1,7 @@
+.clock {
+  display: block;
+  text-align: center;
+  font-size: 5em;
+  margin: 0.5em;
+  font-weight: bold;
+}

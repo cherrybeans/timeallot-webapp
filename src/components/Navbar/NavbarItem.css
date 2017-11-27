@@ -1,10 +1,28 @@
-.navbar .navbar-item {
-  margin: 0 15px;
-  height: 100%;
+.navbar .navbar-item > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  padding: 0 15px;
+}
+.active-navbar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  background-color: pink;
+  width: 100%;
+}
+
+.navbar .navbar-item > a:hover {
+  color: #484848;
+}
+
+.noMargin {
+  margin: 0;
 }
 
 .activeNav {
-  border-bottom: 2px solid black;
   opacity: 1;
   font-weight: bold;
 }

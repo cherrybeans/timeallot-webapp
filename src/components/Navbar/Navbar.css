@@ -25,21 +25,29 @@ html {
 .navbar .navbar-username {
   padding: 10px 20px 10px 10px;
 }
+.navbar .navbar-username:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+#cog:hover {
+  color: pink;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 
 @media (max-width: 650px) {
-  .bar {
+  .navbar {
     flex-wrap: wrap;
   }
-  .icon {
+  .logo {
     order: 0 !important;
   }
-  .username {
+  .navbar-item {
     order: 1 !important;
-    width: 100%;
-    margin: 15px;
   }
-  .search {
+  .username {
     order: 2 !important;
     width: 100%;
+    margin: 15px;
   }
 }

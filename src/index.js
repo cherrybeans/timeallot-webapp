@@ -8,6 +8,7 @@ import "./index.css";
 
 import Navbar from "./components/Navbar/Navbar";
 import Timer from "./routes/timer/components/Timer";
+import Settings from "./routes/settings/components/Settings";
 import Statistics from "./routes/statistics/components/Statistics";
 import Goals from "./routes/goals/components/Goals";
 
@@ -21,6 +22,7 @@ ReactDOM.render(
         <Route exact path="/" component={Timer} />
         <Route path="/stats" component={Statistics} />
         <Route path="/goals" component={Goals} history={history} />
+        <Route path="/settings" component={Settings} />
       </main>
     </div>
   </Router>,
