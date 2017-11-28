@@ -1,3 +1,4 @@
+// @flow
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import FontAwesome from "react-fontawesome";

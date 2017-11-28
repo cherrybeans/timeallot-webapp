@@ -22,8 +22,7 @@ class NavbarItem extends Component {
 
 NavbarItem.propTypes = {
   exact: PropTypes.bool,
-  link: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired
+  link: PropTypes.string.isRequired
 };
 
 NavbarItem.defaultProps = {

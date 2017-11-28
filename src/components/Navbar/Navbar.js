@@ -1,6 +1,5 @@
 // @flow
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 import FontAwesome from "react-fontawesome";
 import Logo from "../Logo/Logo";
 import NavbarItem from "./NavbarItem";
@@ -18,10 +17,8 @@ class Navbar extends Component {
             <NavbarItem text="Goals" link="/goals" />
           </div>
           <div className="navbar-group">
-            <div className="navbar-username">Sigrid</div>
-            <NavLink id="cog" to="/settings">
-              <FontAwesome name="cog" />
-            </NavLink>
+            <NavbarItem text="Sigrid" link="/profile" />
+            <NavbarItem text={<FontAwesome name="cog" />} link="/settings" />
           </div>
         </div>
       </nav>

@@ -1,3 +1,4 @@
+// @flow
 import React, { Component } from "react";
 import Tag from "../../../components/Tag/Tag";
 import Button from "../../../components/Button/Button";
