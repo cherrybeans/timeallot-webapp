@@ -10,8 +10,9 @@ class Settings extends Component {
           <BackButton /> Settings
         </h1>
         <p>
-          In the future you can do stuff here, like change the theme, set a
-          different sound, change timer duration, delete data, and backup data.
+          In the future you can do stuff here, like change the theme, change
+          color palette for tags, set a different sound, change timer duration,
+          delete data, and backup data.
         </p>
       </div>
     );

@@ -6,7 +6,55 @@ import Countdown from "../../../components/Countdown/Countdown";
 import "./Timer.css";
 
 class Timer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      tags: [
+        { id: 1, text: "timeallot" },
+        { id: 2, text: "housework" },
+        { id: 4, text: "math" },
+        { id: 5, text: "webtek" },
+        { id: 3, text: "procrastinating" },
+        { id: 6, text: "algdat" },
+        { id: 8, text: "ITGK" },
+        { id: 9, text: "getting ready" },
+        { id: 7, text: "webkom" }
+      ]
+    };
+
+    this.addTags = this.addTags.bind(this);
+    this.removeTags = this.removeTags.bind(this);
+  }
+
+  addTags() {
+    console.log("add");
+  }
+
+  removeTags(id) {
+    var newState = this.state;
+    var index = newState.tags.findIndex(tag => tag.id === id);
+
+    if (index > -1) {
+      newState.tags.splice(index, 1);
+    }
+
+    this.setState(newState);
+  }
+
   render() {
+    const tags = this.state.tags;
+    var tagElements = tags.map((tag, i) => {
+      return (
+        <Tag
+          key={tag.id}
+          index={i}
+          title={tag.text}
+          onClick={() => this.removeTags(tag.id)}
+        />
+      );
+    });
+    console.log(tagElements);
+
     return (
       <div>
         <h1>Timer</h1>
@@ -18,20 +66,10 @@ class Timer extends Component {
         </p>
         <InspirationalText />
         <Countdown />
+        <h2 style={{ textAlign: "center" }}>Tags</h2>
+        <div className="tag-container">{tagElements}</div>
         <div className="tag-container">
-          <Tag title="timeallot" color="#9dcb30" />
-          <Tag title="housework" color="#d02b51" />
-          <Tag title="algdat" color="#f2720f" />
-          <Tag title="math" color="#ecf14a" />
-          <Tag title="webtek" color="#f980b4" />
-          <Tag title="housework" color="#d02b51" />
-          <Tag title="ITGK" color="#f2720f" />
-          <Tag title="webkom" color="#9dcb30" />
-          <Tag title="cooking" color="#ecf14a" />
-          <Tag title="getting ready" color="#f980b4" />
-        </div>
-        <div className="tag-container">
-          <Button txt="Add tags" />
+          <Button onClick={this.addTags} txt="Add tags" />
         </div>
       </div>
     );

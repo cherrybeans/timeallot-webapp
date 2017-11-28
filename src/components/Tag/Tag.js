@@ -12,7 +12,7 @@ class Tag extends Component {
     let title = this.props.title;
     return (
       <div className="tag" style={tagStyle}>
-        {title} <RemoveTag />
+        {title} <RemoveButton onClick={this.props.onClick} />
       </div>
     );
   }
@@ -25,9 +25,16 @@ Tag.propTypes = {
 
 Tag.defaultProps = {
   title: "It's a tag!",
-  color: "#aeaeae"
+  color: "#aeaeae",
+  onClick: this.removeTags
 };
 
-const RemoveTag = () => <FontAwesome name="times" />;
+function RemoveButton(props) {
+  return (
+    <a onClick={props.onClick}>
+      <FontAwesome name="times" />
+    </a>
+  );
+}
 
 export default Tag;
