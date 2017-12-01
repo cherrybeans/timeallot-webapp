@@ -1,7 +1,6 @@
 # timeallot-webapp
 
-Frontend in React for the focus timer app timeallot. <br> Not yet connected to
-backend.
+Frontend in React for the focus timer app timeallot.
 
 ## Install yarn
 
