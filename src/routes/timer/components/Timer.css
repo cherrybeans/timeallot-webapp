@@ -1,11 +1,1 @@
-.tag-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 80%;
-  margin: auto;
-}
 
-.sectionContainer {
-  padding: 20px 0 0 0;
-}

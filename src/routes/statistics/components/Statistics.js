@@ -18,5 +18,30 @@ class Statistics extends Component {
     );
   }
 }
+const sessions = [
+  {
+    id: 1,
+    duration: 25,
+    project: 1,
+    subtags: [
+      { tag_name: "planning" },
+      { tag_name: "designing" },
+      { tag_name: "researching" },
+      { tag_name: "programming" }
+    ]
+  },
+  {
+    id: 2,
+    duration: 25,
+    project: 2,
+    subtags: [{ tag_name: "laundry" }, { tag_name: "housecleaning" }]
+  },
+  {
+    id: 3,
+    duration: 25,
+    project: 3,
+    subtags: [{ tag_name: "assignments" }]
+  }
+];
 
 export default Statistics;
